@@ -23,11 +23,33 @@
 
   
 
-  <!--Style tag to default images on page as 300*300px without streching-->
+  <!--Style tags-->
   <style>
-    img {
+    #grid_px {
       width: 300px;
       height: 300px;
+      object-fit: cover;
+    }
+    #inline_form {
+      margin-right: 1rem;
+    }
+    .carousel-css {
+      height: 600px;
+      width: 1200px;
+      object-fit:cover;
+    }
+    .jumbotron_text {
+      text-align: center;
+    }
+    .card_img {
+      width: 254px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .mo_img {
+      width: 75px;
+      height: 75px;
+      border-radius: 1rem;
       object-fit: cover;
     }
   </style>
@@ -48,7 +70,6 @@
         <li class="nav-item"><a class="nav-link" href="#jumbotron">Jumbotron</a></li>
         <li class="nav-item"><a class="nav-link" href="#collapsible">Collapsible</a></li>
         <li class="nav-item"><a class="nav-link" href="#card">Card</a></li>
-        <li class="nav-item"><a class="nav-link" href="#table2">Table 2</a></li>
 
         <!--Navbar Dropdown 1-->
         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More
@@ -84,26 +105,26 @@
   <!--6 Picture grid demo Excercise-->
   <div class="container mt-3" id="home">
     <br><br><br>
-    <h2>Home (Grid demo)</h2>
+    <h2>Home (Grid Excercise)</h2>
     <br>
 
     <!--Table row 1-->
     <div class="row">
       <section class="col">
         <!--Picture 1-->
-        <img src="images/beach_pier.jpg" alt="Wooden pier streching into the ocean">
+        <img id="grid_px" src="images/beach_pier.jpg" alt="Wooden pier streching into the ocean">
         <h4>1. Idylic Beach and Pier</h4>
         <p>This location is an absolutely <strong>unforgetable</strong> getaway!</p>
       </section>
       <section class="col">
         <!--Picture 2-->
-        <img src="images/china_plate.jpg" alt="Ceramic plate with blue flowers painted on top">
+        <img id="grid_px" src="images/china_plate.jpg" alt="Ceramic plate with blue flowers painted on top">
         <h4>2. Rare Ceramics</h4>
         <p>Bring home and souvenier with our <span class="font-weight-bold">world class</span> ceramics.</p>
       </section>
       <section class="col">
         <!--Picture 3-->
-        <img src="images/dim_cafe.jpg" alt="dimly lit rustic cafe">
+        <img id="grid_px" src="images/dim_cafe.jpg" alt="dimly lit rustic cafe">
         <h4>3. Great coffee</h4>
         <p>Cafes and Restaraunts renowned throughout the whole region.</p>
       </section>
@@ -113,51 +134,426 @@
     <div class="row">
       <section class="col">
         <!--Picture 4-->
-        <img src="images/roman_columns.jpg" alt="weathered concrete columns from the ancient era">
+        <img id="grid_px" src="images/roman_columns.jpg" alt="weathered concrete columns from the ancient era">
         <h4>4. Get in touch with History</h4>
         <p>Experience history over <strong><em>one thousand</em></strong> years in the making!</p>
       </section>
       <section class="col">
         <!--Picture 5-->
-        <img src="images/sandstone_hills.jpg" alt="sample image">
+        <img id="grid_px" src="images/sandstone_hills.jpg" alt="sample image">
         <h4>2. Enter your heading here</h4>
         <p>Our therapeutic <span class="font-weight-bold">grooming</span> treatments help battle fleas, allergic
           dermatitis, and other challenging skin conditions.</p>
       </section>
       <section class="col">
         <!--Picture 6-->
-        <img src="images/seaside_city.jpg" alt="sample image">
+        <img id="grid_px" src="images/seaside_city.jpg" alt="sample image">
         <h4>3. Enter your heading here</h4>
         <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health
           services.</p>
       </section>
+    </div>
+  </div>
+
+
+
+
+  <!--Form Excercise-->
+  <div class="container mt-3" id="form">
+    <br><br><br>
+    <h2>Form Excercise</h2><br>
+    <!--  -->
+    <h5>Vertical Form</h5>
+    <form>
+      <div class="form-group">
+        <label>Data:</label>
+        <input class="form-control">
+      </div>
+      <div class="form-group">
+        <label >More Data:</label>
+        <input class="form-control">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"> Checkbox</label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit Form</button>
+    </form><br><br>
+    <!-- -->
+    <h5>Inline Form</h5>
+    <form class="form-inline">
+      <div class="form-group">
+        <label id="inline_form">Data:</label>
+        <input class="form-control" id="inline_form">
+      </div>
+      <div class="form-group">
+        <label id="inline_form">More Data:</label>
+        <input class="form-control" id="inline_form">
+      </div>
+      <div class="checkbox">
+        <label id="inline_form"><input type="checkbox"> Checkbox</label>
+      </div>
+      <button type="submit" class="btn btn-default" id="inline_form">Submit Form</button>
+    </form><br><br>
+  </div>
+
+
+
+
+  <!--Table 1 Excercise -->
+  <div class="container mt-3" id="table1">
+    <br><br><br>
+    <h2>Table 1 Excercise</h2>
+    <br>
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Data 1</th>
+            <th>Data 2</th>
+            <th>Data 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>48967895</td>
+            <td>3213123</td>
+            <td>21312321</td>
+          </tr>
+          <tr>
+            <td>123213</td>
+            <td>123213123</td>
+            <td>645645564</td>
+          </tr>
+          <tr>
+            <td>7476547452</td>
+            <td>32423573</td>
+            <td>426436347</td>
+          </tr>
+          <tr>
+            <td>56356</td>
+            <td>3134135133</td>
+            <td>2315447</td>
+          </tr>
+          <tr>
+            <td>4657052</td>
+            <td>78856</td>
+            <td>2321346</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+
+
+
+
+  <!--Carousel Excercise-->
+  <div class="container mt-3" id="carousel">
+    <br><br><br>
+    <h2>Carousel Excercise</h2>
+    <br>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="carousel-css" src="images/beach_pier.jpg" alt="Beach Pier">
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-css" src="images/dim_cafe.jpg" alt="Dim Cafe">
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-css" src="images/sandstone_hills.jpg" alt="Sandstone Hills">
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    
+    </div>
+    </div>
+  
+
+
+
+  <!--Table 2 Excercise-->
+  <div class="container mt-3" id="table2">
+    <br><br><br>
+    <h2>Table 2 Excercise</h2>
+    <br>
+    <div class="table-responsive">
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th>Data 1</th>
+            <th>Data 2</th>
+            <th>Data 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>48967895</td>
+            <td>3213123</td>
+            <td>21312321</td>
+          </tr>
+          <tr>
+            <td>123213</td>
+            <td>123213123</td>
+            <td>645645564</td>
+          </tr>
+          <tr>
+            <td>7476547452</td>
+            <td>32423573</td>
+            <td>426436347</td>
+          </tr>
+          <tr>
+            <td>56356</td>
+            <td>3134135133</td>
+            <td>2315447</td>
+          </tr>
+          <tr>
+            <td>4657052</td>
+            <td>78856</td>
+            <td>2321346</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+
+
+
+  <!--Jumbotron Excercise-->
+  <div class="container mt-3" id="jumbotron">
+    <br><br><br>
+    <h2>Jumbotron Exercise</h2>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="jumbotron_text">Jumbotron</h1>
+        <p class="jumbotron_text">Here is a jumbotron</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--Collapsible Excercise-->
+  <div class="container mt-3" id="collapsible">
+    <br><br><br>
+    <h2>Collapsible Exercise</h2>
+    <br>
+    <div id="accordion">
+
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseOne">
+            Data 1
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+            4809573986712
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+            Data 2
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            476309876
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+            Data 3
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            37264298765
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+
+
+
+  <!--Card Excercise-->
+  <div class="container mt-3" id="card">
+    <br><br><br>
+    <h2>Card Exercise</h2>
+    <br>
+    <div class="card-deck">
+      <div class="card" style="width:400px">
+        <img class="card-img-top card_img" src="images/china_plate.jpg" alt="China Plate">
+        <div class="card-body">
+          <h4 class="card-title">Person1</h4>
+          <p class="card-text">Info about me.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+
+      <div class="card" style="width:400px">
+        <img class="card-img-top card_img" src="images/seaside_city.jpg" alt="Seaside City">
+        <div class="card-body">
+          <h4 class="card-title">Person2</h4>
+          <p class="card-text">Info about me.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+
+      <div class="card" style="width:400px">
+        <img class="card-img-top card_img" src="images/roman_columns.jpg" alt="Roman Columns">
+        <div class="card-body">
+          <h4 class="card-title">Person3</h4>
+          <p class="card-text">Info about me.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+
+      <div class="card" style="width:400px">
+        <img class="card-img-top card_img" src="images/dim_cafe.jpg" alt="Dim Cafe">
+        <div class="card-body">
+          <h4 class="card-title">Person4</h4>
+          <p class="card-text">Info about me.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+
+                                                                  <!--MORE EXERCISES-->
+                                                                  <br><br>
+                                                                  <div class="container mt-3"><h1>MORE</h1></div>
+
+
+
+
+  <!--Modal Excercise-->
+  <div class="container mt-3" id="modal">
+    <br><br><br>
+    <h2>Modal Exercise</h2>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Open modal
+    </button>
+    
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Infomation</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            Data data data
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--Media Object Excercise-->
+  <div class="container mt-3" id="mediao">
+    <br><br><br>
+    <h2>Media Object Exercise</h2>
+    <br>
+    <div class="media">
+      <img src="images/beach_pier.jpg" class="align-self-start mr-3 mo_img" style="width:60px">
+      <div class="media-body">
+        <h4>Media Object 1</h4>
+        <p>Media media media </p>
+        <div class="media">
+          <img src="images/seaside_city.jpg" class="align-self-end mr-3 mo_img" style="width:60px">
+          <div class="media-body">
+            <h4>Media Object 1 (nested)</h4>
+            <p>Media media media</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="media">
+      <img src="images/dim_cafe.jpg" class="align-self-center mr-3 mo_img" style="width:60px">
+      <div class="media-body">
+        <h4>Media Object 2</h4>
+        <p>Media media media</p>
+      </div>
+    </div>
+    <br>
+    <div class="media">
+      <img src="images/seaside_city.jpg" class="align-self-end mr-3 mo_img" style="width:60px">
+      <div class="media-body">
+        <h4>Media Object 3</h4>
+        <p>Media media media</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--Tooltip Excercise-->
+  <div class="container mt-3" id="tooltip">
+    <br><br><br>
+    <h2>Tooltip Exercise</h2>
+    <br>
+
     </div>
 
 
 
 
 
-    <a id="ex2"></a>
-    <br><br>
-    <!-- start of second exercise -->
-    <section class="content">
-      <h1>Second exercise </h1>
-      <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and
-        treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom
-        garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and&nbsp;cures.
-      </p>
-      <p>We strive to be your pet's medical staff experts from youth through the senior years. We build preventative
-        health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet
-        receives the most appropriate care at crucial milestones. We want to give your pet a long and healthy&nbsp;life.
-      </p>
-    </section>
 
-    <!-- end  of second exercise -->
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-    <br>
-
-  </div><!-- container -->
-
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+  <br>
   <script src="js/jquery.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
