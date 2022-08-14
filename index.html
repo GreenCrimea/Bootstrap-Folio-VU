@@ -46,11 +46,32 @@
       height: 300px;
       object-fit: cover;
     }
+    .card_img2 {
+      width: 254px;
+      height: 300px;
+      object-fit: cover;
+      margin: 2.5rem;
+    }
     .mo_img {
       width: 75px;
       height: 75px;
       border-radius: 1rem;
       object-fit: cover;
+    }
+    .xtra {
+      text-align: center;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: darkgray;
+      color: black;
+      text-align: center;
+    }
+    body {
+      background-image: url("images/background.jpg");
     }
   </style>
 
@@ -88,8 +109,7 @@
           <span class="caret"></span></a>
         <ul class="dropdown-menu bg-dark">
           <li class="nav-item"><a class="nav-link" href="#popover">Popover</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tabpill">Tabs/Pills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#panels">Panels</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pill">Pills</a></li>
           <li class="nav-item"><a class="nav-link" href="#progress">Progress Bar</a></li>
           <li class="nav-item"><a class="nav-link" href="#badges">Badges/Labels</a></li>
           <li class="nav-item"><a class="nav-link" href="#inputsizing">Input Sizing</a></li>
@@ -456,7 +476,7 @@
 
                                                                   <!--MORE EXERCISES-->
                                                                   <br><br>
-                                                                  <div class="container mt-3"><h1>MORE</h1></div>
+                                                                  <div class="container mt-3 xtra"><h1><u>MORE</u></h1></div>
 
 
 
@@ -544,9 +564,209 @@
     <br><br><br>
     <h2>Tooltip Exercise</h2>
     <br>
-
+    <div class="card-deck">
+      <div class="card bg-primary" data-toggle="tooltip" title="MORE DATA">
+        <div class="card-body text-center">
+          <p class="card-text">Tooltip 1</p>
+        </div>
+      </div>
+      <div class="card bg-warning" data-toggle="tooltip" title="MORE DATA">
+        <div class="card-body text-center">
+          <p class="card-text">Tooltip 2</p>
+        </div>
+      </div>
+      <div class="card bg-success" data-toggle="tooltip" title="MORE DATA">
+        <div class="card-body text-center">
+          <p class="card-text">Tooltip 3</p>
+        </div>
+      </div>
+      <div class="card bg-danger" data-toggle="tooltip" title="MORE DATA">
+        <div class="card-body text-center">
+          <p class="card-text">Tooltip 4</p>
+        </div>
+      </div>
+    </div>
     </div>
 
+
+
+
+  <!--Navigation Tab Excercise-->
+  <div class="container mt-3" id="navtab">
+    <br><br><br>
+    <h2>Navigation Tab Exercise</h2>
+    <br>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#home">To top</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#inputsizing">To bottom</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    </div>
+
+
+
+
+  <!--Image Shape Excercise-->
+  <div class="container mt-3" id="imgshape">
+    <br><br><br>
+    <h2>Image Shape Exercise</h2>
+    <br>
+    <div class="card-deck">
+      <div class="card" style="width:400px">
+        <img class="card-img-top card_img2 rounded" src="images/china_plate.jpg" alt="China Plate">
+        <div class="card-body">
+          <h4 class="card-title">Rounded Corners</h4>
+        </div>
+      </div>
+
+      <div class="card" style="width:400px">
+        <img class="card-img-top card_img2 rounded-circle" src="images/seaside_city.jpg" alt="Seaside City">
+        <div class="card-body">
+          <h4 class="card-title">Circle</h4>
+        </div>
+      </div>
+
+      <div class="card" style="width:400px">
+        <img class="card-img-top card_img2 img-thumbnail" src="images/roman_columns.jpg" alt="Roman Columns">
+        <div class="card-body">
+          <h4 class="card-title">Thumbnail</h4>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+
+                                                                  <!--EXTRA CREDIT-->
+                                                                  <br><br>
+                                                                  <div class="container mt-3 xtra"><h1><u>EXTRA CREDIT</u></h1></div>
+  
+
+
+
+  <!--Popover Excercise-->
+  <div class="container mt-3" id="popover">
+    <br><br><br>
+    <h2>Popover Exercise</h2>
+    <br>
+    <div class="card-deck">
+      <div class="card bg-primary" data-toggle="popover" title="MORE DATA" data-content="485974897895474895" data-placement="top">
+        <div class="card-body text-center">
+          <p class="card-text">Popover 1</p>
+        </div>
+      </div>
+      <div class="card bg-warning" data-toggle="popover" title="MORE DATA" data-content="485974897895474895" data-placement="top">
+        <div class="card-body text-center">
+          <p class="card-text">Popover 2</p>
+        </div>
+      </div>
+      <div class="card bg-success" data-toggle="popover" title="MORE DATA" data-content="485974897895474895" data-placement="top">
+        <div class="card-body text-center">
+          <p class="card-text">Popover 3</p>
+        </div>
+      </div>
+      <div class="card bg-danger" data-toggle="popover" title="MORE DATA" data-content="485974897895474895" data-placement="top">
+        <div class="card-body text-center">
+          <p class="card-text">Popover 4</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+  <!--Pills Excercise-->
+  <div class="container mt-3" id="pill">
+    <br><br><br>
+    <h2>Pills Exercise</h2>
+    <br>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#home">To Top</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#inputsizing">To Bottom</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    </div>
+
+
+
+
+  <!--Progress Bar Excercise-->
+  <div class="container mt-3" id="progress">
+    <br><br><br>
+    <h2>Progress Bar Exercise</h2>
+    <br>
+    <div class="progress">
+      <div class="progress-bar" style="width:60%"></div>
+      </div><br><div class="progress">
+      <div class="progress-bar" style="width:70%">70%</div>
+      </div><br><div class="progress">
+      <div class="progress-bar progress-bar-striped" style="width:40%"></div>
+      </div><br><div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:85%"></div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+  <!--Badges/Labels Excercise-->
+  <div class="container mt-3" id="badges">
+    <br><br><br>
+    <h2>Badges/Labels Exercise</h2>
+    <br>
+    <span class="badge badge-primary">Primary</span>
+    <span class="badge badge-secondary">Secondary</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-danger">Danger</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-info">Info</span>
+    <span class="badge badge-light">Light</span>
+    <span class="badge badge-dark">Dark</span>
+    </div>
+
+
+
+
+  <!--Input Sizing Excercise-->
+  <div class="container mt-3" id="inputsizing">
+    <br><br><br>
+    <h2>Input Sizing Exercise</h2>
+    <br>
+    <div class="form-group">
+      <label for="comment">Resizable Input:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    </div>
+
+
+
+
+  <!--Footer-->
+  <div class="footer">
+    <p>Bootstrap Folio by Tom Horton (s4671791) 2022</p>
+  </div>
 
 
 
@@ -557,6 +777,16 @@
   <script src="js/jquery.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+    </script>
 </body>
 
 </html>
